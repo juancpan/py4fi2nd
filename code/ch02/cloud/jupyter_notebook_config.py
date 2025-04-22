@@ -18,7 +18,7 @@ c.NotebookApp.port = 8888
 # PASSWORD PROTECTION
 # here: 'jupyter' as password
 # replace the hash code with the one for your strong password
-c.NotebookApp.password = 'sha1:d4d34232ac3a:55ea0ffd78cc3299e3e5e6ecc0d36be0935d424b'
+c.NotebookApp.password = 'argon2:$argon2id$v=19$m=10240,t=10,p=8$aD0gRO6vocgR1nG4cf1aLg$B8uA0Ec6C/2WRUxeQv6pw5OW2jf/mWHoUb9fsXJb+o0'
 
 # NO BROWSER OPTION
 # prevent Jupyter from trying to open a browser

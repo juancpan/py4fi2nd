@@ -1,5 +1,12 @@
 # Python for Finance (2nd ed., O'Reilly)
 
+## Chap 13 Notes
+
+Use local `jupyter lab` to run `a_statistics` and `machine_learning`.
+Use remote to run `b_statistics`.
+
+---
+
 This repository provides all Python codes and Jupyter Notebooks of the book _Python for Finance -- Mastering Data-Driven Finance_ (2nd edition) by Yves Hilpisch.
 
 <img src="http://hilpisch.com/images/py4fi_2nd_shadow.png" width="500">

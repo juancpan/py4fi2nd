@@ -1,0 +1,159 @@
+# Conda environment config converted for macOS from Linux export
+# NOTE: Build specifics and OS-specific dependencies removed.
+# This lists key packages; Conda will resolve dependencies for macOS.
+# Versions are omitted for maximum compatibility during recreation.
+# You may need to add specific version constraints if your code requires them.
+name: py4fi # Keeping the original name
+channels:
+  - defaults
+  - conda-forge
+  # Keeping original channels - generally okay cross-platform
+  # - https://repo.anaconda.com/pkgs/main # Often covered by defaults
+  # - https://repo.anaconda.com/pkgs/r    # Only needed if using R packages
+
+dependencies:
+  # Core Python version
+  - python=3.9
+  - python-dateutil
+  # --- Key Data Science & Numerical Libraries ---
+  - numpy
+  # - numpy-base
+  - pandas
+  - scipy
+  - scikit-learn
+  - pytables # HDF5 storage often used with pandas
+  - bottleneck # Performance extension for pandas/numpy
+  - numexpr    # Performance extension for pandas/numpy
+  # - tensorboard
+  # - tensorflow-base=1.12.0
+  # - mkl=2018.0.3
+  # - mkl-service=1.1.2
+  # - mkl_fft=1.0.6
+  # - mkl_random=1.0.1
+  - pytables
+
+  # --- Plotting & Visualization ---
+  - matplotlib
+  - pillow # Image library, often needed by matplotlib/others
+
+  # --- Jupyter / IPython Ecosystem ---
+  - jupyterlab # Should pull in notebook, ipython, ipykernel, etc.
+  - ipywidgets # For interactive widgets
+
+  # --- Web & Data Handling ---
+  # - requests
+  # - beautifulsoup4
+  # - lxml # Often used with beautifulsoup or pandas reading html/xml
+  # - openpyxl # For reading/writing Excel files with pandas
+
+  # --- Utilities & Other ---
+  # - pyqt # Keep if you specifically need it for GUI elements (matplotlib backend?)
+  # - mysql # Keep ONLY if you need MySQL connectivity via conda install
+  # - argon2-cffi # Often needed for notebook password hashing
+  # - attrs
+  # - babel
+  # - bleach # Often needed by Jupyter/nbconvert
+  # - brotlipy
+  # - certifi
+  # - cffi
+  # - charset-normalizer
+  # - cryptography
+  # - cycler # Matplotlib dependency
+  # - decorator
+  # - defusedxml
+  # - entrypoints
+  # - idna
+  # - importlib-metadata
+  # - jedi # IPython dependency
+  # - jinja2 # Jupyter dependency
+  # - joblib # Scikit-learn dependency
+  # - json5 # JupyterLab dependency
+  # - jsonschema # Jupyter/nbformat dependency
+  # - kiwisolver # Matplotlib dependency
+  # - markupsafe # Jinja2 dependency
+  # - mistune # nbconvert dependency
+  # - mock # General utility
+  # - munkres # Matplotlib dependency? Or other? Keeping for now.
+  # - nbclassic # Jupyter dependency
+  # - nbclient # Jupyter dependency
+  # - nbconvert # Jupyter dependency
+  # - nbformat # Jupyter dependency
+  # - nest-asyncio # Jupyter dependency
+  # - packaging
+  # - pandocfilters # nbconvert dependency
+  # - parso # IPython/Jedi dependency
+  # - pexpect # IPython dependency
+  # - pickleshare # IPython dependency
+  # - ply # General utility
+  # - prometheus_client # Jupyter dependency
+  # - prompt-toolkit # IPython dependency
+  # - psutil
+  # - pycparser # cffi dependency
+  # - pygments # IPython/Jupyter dependency
+  # - pyopenssl
+  # - pyparsing
+  # - pyrsistent # jsonschema dependency
+  # - pysocks # requests/urllib3 dependency
+  # # - python-dateutil # pandas dependency
+  # - pytz # pandas dependency
+  # - pyyaml
+  # - pyzmq # Jupyter/ipykernel dependency
+  # - qtconsole # Jupyter dependency
+  # - qtpy # Jupyter/pyqt dependency
+  # - send2trash # Jupyter/notebook dependency
+  # - setuptools
+  # - sip # PyQt dependency
+  # - six # General utility
+  # - sniffio # Anyio dependency
+  # - soupsieve # beautifulsoup4 dependency
+  # - terminado # Jupyter dependency
+  # - threadpoolctl # Scikit-learn/numpy dependency
+  # - tinycss2 # Potentially widget related
+  # - toml # General utility
+  # - tomli # General utility
+  # - tornado # Jupyter dependency
+  # - traitlets # Jupyter/ipython dependency
+  # - typing-extensions
+  # - urllib3 # requests dependency
+  # - wcwidth # prompt-toolkit dependency
+  # - webencodings # beautifulsoup4/html5lib dependency
+  # - websocket-client # Jupyter dependency
+  # - wheel
+  # - widgetsnbextension # ipywidgets dependency
+  - yaml
+  - zeromq # pyzmq dependency
+  - zipp # importlib dependency
+  - pip 
+  # - mkl
+  # - pymc3
+  # - theano-pymc
+  # - sympy
+  # - theano=1.0.3
+
+
+  # --- Pip Dependencies ---
+  # Keep these as they are often cross-platform, remove pip itself
+  - pip:
+    - chardet
+    - colorlover
+    - configparser
+    - cufflinks
+    # - fxcmpy
+    # - idna
+    # - nose
+    # - pkginfo
+    # - plotly
+    # - pysocks
+    # - requests
+    # - requests-toolbelt
+    # - retrying
+    # - socketio-client
+    # - tables
+    # - tensorflow==1.12.0
+    # - tstables
+    # - urllib3
+    - websocket-client
+    # - numpy==1.19.5
+
+# The original prefix line should be removed when recreating.
+# prefix: /Users/juan/data/static/conda-envs/py4fi/

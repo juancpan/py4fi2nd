@@ -1,0 +1,27 @@
+# Conda environment for Py4Fi Chapter 13 (Modern Versions)
+# Focuses on core requested packages, letting Conda resolve dependencies for macOS.
+name: py4fi_ch13 # Suggesting a new name for clarity
+channels:
+  - conda-forge # Primary channel for up-to-date packages, good TF support
+  # - apple # Might be needed automatically by conda-forge for tensorflow-deps on Apple Silicon
+  - defaults # Can be included as a fallback
+dependencies:
+  # Specify Python version compatible with modern libraries
+  - python=3.11
+
+  # --- Core Requested Packages ---
+  - numpy # Conda will choose version compatible with tensorflow
+  - pandas
+  - tensorflow # Installs current stable TensorFlow 2.x; conda-forge handles backend
+  - jupyterlab # Includes notebook server, core, etc.
+  - scikit-learn
+  - scipy
+  - matplotlib
+
+  # --- Pip (if any specific pip-only packages were needed - none requested here) ---
+  # - pip:
+  #   - some-pip-package
+
+# Removed prefix line
+# Removed extensive list of low-level dependencies (conda will resolve)
+# Removed outdated/conflicting packages (mkl, theano, pymc3 etc.)
